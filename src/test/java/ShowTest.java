@@ -22,7 +22,7 @@ protected WebDriver driver;
         options.addArguments("--headless");
         //options.addArguments("--start-maximized");
         //options.addArguments("--start-fullscreen");
-        driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
+        driver = new RemoteWebDriver(new URL("seleniumhub:4444/wd/hub"), options);
 		driver.get("https://www.shoes.co.uk/register");
 		driver.navigate().refresh();
 		driver.quit();
