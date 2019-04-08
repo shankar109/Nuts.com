@@ -48,4 +48,10 @@ protected WebDriver driver;
 		driver.quit();
 	}
 
+	@Test
+	public void runSysOut() {
+
+		System.out.println("I love this game");
+	}
+
 }
