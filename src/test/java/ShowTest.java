@@ -44,6 +44,7 @@ protected WebDriver driver;
 		driver.findElement(By.id("email_address_login")).sendKeys("shaggie_wolf34@yahoo.com");
 		driver.findElement(By.id("password_login")).sendKeys("aiuCH5Pr");
 		driver.findElement(By.cssSelector("#login_form > div:nth-child(4) > div > input")).click();
+		driver.navigate().refresh();
 		driver.quit();
 	}
 
